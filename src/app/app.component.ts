@@ -16,6 +16,8 @@ import { Application } from '@nativescript/core'
 export class AppComponent implements OnInit {
   private _activatedUrl: string
   private _sideDrawerTransition: DrawerTransitionBase
+  private router: Router,
+  private firebaseService: FirebaseService
 
   constructor(private router: Router, private routerExtensions: RouterExtensions) {
     // Use the component constructor to inject services.
